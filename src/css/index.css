@@ -1,0 +1,101 @@
+html, body /*Essential*/ {
+  width: 100%;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#home {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: -5%;
+}
+
+div {
+  color: #ffffff;
+}
+
+section {
+  height: 33%;
+}
+
+.header,
+.subheader div {
+  display: flex;
+  justify-content: center;
+}
+
+.header1,
+.header2 {
+  font-weight: bold;
+  font-size: 60px;
+  font-size: calc((2.65vmin) + (2.65vmax));
+}
+
+.subheader1,
+.subheader2 {
+  font-size: 45px;
+  font-size: calc((1.9vmin) + (1.9vmax));
+}
+
+.subheader3 {
+  font-size: 50px;
+  font-size: calc((2.2vmin) + (2.2vmax));
+}
+
+.hl {
+  margin-left: 12px;
+  color: #d7907b;
+}
+
+@media (orientation: landscape) {
+  #home {
+    height: 85%;
+  }
+}
+
+@media (orientation: portrait) {
+  #home {
+    height: 55%;
+  }
+  .subheader1,
+  .subheader2 {
+    font-size: calc((1.7vmin) + (1.7vmax));
+  }
+  .subheader3 {
+    font-size: calc((1.8vmin) + (1.8vmax));
+  }
+  .hl {
+    margin-left: 6px;
+  }
+
+  .badgeList {
+    width: 60%;
+  }
+
+  section {
+    height: 25%;
+  }
+}

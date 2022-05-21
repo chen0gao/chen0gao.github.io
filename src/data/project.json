@@ -1,0 +1,61 @@
+[
+  {
+    "title": "BioSimulation",
+    "date": "2019",
+    "href": "https://ccnydss.github.io/bioanimation/",
+    "tag": ["JavaScript", "p5.js"],
+    "desc": [
+      "A simple web simulation for the Nernst and Goldman equation",
+      "Interactive simulation with tutorial",
+      "Detailed Data charts witl filters"
+    ]
+  },
+  {
+    "title": "Cryptopoly",
+    "date": "2022",
+    "href": "https://github.com/chen0gao/Cryptopoly",
+    "tag": ["JavaScript", "Python", "Java", "Google Cloud"],
+    "desc": [
+      "A web two players Monopoly board game with cryptocurrencies theme",
+      "Real-time market price cryptocurrencies trends",
+      "Hoya2022 Hackathon \"Build a Game Track Prize\""
+    ]
+  },
+  {
+    "title": "Science Sims 3D",
+    "date": "2021",
+    "href": "https://github.com/chen0gao/Science-Sims-3D",
+    "tag": ["JavaScript", "Three.js"],
+    "desc": [
+      "Turn 2D simulations in Science.js into 3D simulation using Three.js",
+      "Ball, Vector, Pendulum, Solar System 3D simulation"
+    ]
+  },
+  {
+    "title": "Visual Plot",
+    "date": "2021",
+    "href": "https://github.com/chen0gao/Visual-Plot",
+    "tag": ["JavaScript", "D3.js"],
+    "desc": [
+      "Reproducing charts such as Timeline, Calendar, Arc, Bubble and Map using d3.js"
+    ]
+  },
+  {
+    "title": "Java Tetris",
+    "date": "2021",
+    "href": "https://github.com/chen0gao/Java_Team_Projects/tree/main/Project%201%20-%20Tetris",
+    "tag": ["Java"],
+    "desc": ["Tetris in Java"]
+  },
+  {
+    "title": "OpenSpace Remote Control",
+    "date": "2019",
+    "href": "https://github.com/ccnyplanetarium/OpenSpace-remote-control",
+    "tag": ["JavaScript", "Node.js", "Socket.IO"],
+    "desc": [
+      "Remote control based on OpenSpace Socket api",
+      "Interactive web app to handle remote control",
+      "Speech control by Web Speech API"
+    ]
+  }
+]

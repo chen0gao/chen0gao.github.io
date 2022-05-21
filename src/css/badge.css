@@ -1,0 +1,67 @@
+.badgeList {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 20%;
+  width: 40%;
+
+  /* Make mobile split into two column */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.badgeIcon {
+  height: 50%;
+  width: 33%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a svg {
+  height: 12vmin;
+  width: 12vmin;
+  fill: white;
+  cursor: pointer;
+}
+
+.badgeText {
+  font-size: calc((1vmin) + (1vmax));
+  /* font-weight: bold; */
+}
+
+.Linkedin circle {
+  stroke: #00a0dc;
+}
+
+a.svg {
+  text-decoration: none;
+  font-size: calc((1vmin) + (1vmax));
+}
+
+.Linkedin .svg:hover svg {
+  fill: #00a0dc;
+}
+.Linkedin .badgeText {
+  color: #00a0dc;
+}
+
+.Github circle {
+  stroke: #ecc5ad;
+}
+.Github a:hover svg {
+  fill: #ecc5ad;
+}
+.Github .badgeText {
+  color: #ecc5ad;
+}
+
+.Project circle {
+  stroke: #e7d599;
+}
+.Project .svg:hover svg {
+  fill: #e7d599;
+}
+.Project .badgeText {
+  color: #e7d599;
+}

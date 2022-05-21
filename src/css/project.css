@@ -1,0 +1,127 @@
+#project {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: -5%;
+}
+
+#project .badgeIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projectBadge {
+  height: 30%;
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.frame {
+  width: 60%;
+  height: 100%;
+  border: 3px solid rgba(231, 213, 153, 0.7);
+  -webkit-background-clip: padding-box; /* for Safari */
+  background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+  opacity: 1;
+  border-radius: 10px;
+  overflow-y: auto;
+}
+
+@media (orientation: portrait) {
+  .frame {
+    width: 80%;
+  }
+}
+
+.projectBody:first-child {
+  padding-top: 3%;
+}
+.projectBody {
+  padding-bottom: 3%;
+  padding-left: 5%;
+  padding-right: 5%;
+  /* height: 60px; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.projectHeader {
+  display: flex;
+  align-items: center;
+}
+.projectHeaderTitle {
+  font-size: 26px;
+  font-size: calc((1.2vmin) + (1.2vmax));
+  color: #d7907b;
+  font-weight: bold;
+}
+
+.projectDesc {
+  font-size: 18px;
+  font-size: calc((1vmin) + (1vmax));
+  line-height: 150%;
+  /* padding-left: 5px; */
+  padding-top: 10px;
+  text-align: left;
+}
+
+.label {
+  margin-top: 5px;
+  margin-top: calc(0.35vw);
+  height: calc(6px + 1vw) !important;
+  margin-left: 10px;
+  border-width: 2px !important;
+  border-width: calc(1px + 0.05vw) !important;
+  /* padding: 2px; */
+}
+
+.label span {
+  color: white;
+  font-size: calc(6px + 0.4vw);
+  font-weight: bold;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+#project {
+  list-style: none;
+}
+
+#project li::before {
+  content: "\2022";
+  color: #d7907b;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  /* margin-left: -1em; */
+}
+
+#project .frame a:hover {
+  text-decoration: underline;
+}

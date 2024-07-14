@@ -1,0 +1,364 @@
+html, body /*Essential*/
+{
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+
+  background-color: #F2F1EF;
+  background-color: #2d3436;
+  background-color: rgb(20, 30, 30);
+  margin: 0;
+  padding: 0;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+li a {
+  color: black;
+  text-decoration: none;
+}
+
+ul li {
+  list-style: circle;
+}
+#intro {
+  width: 100%;
+  height: 100%;
+}
+
+/* #header {
+  display: flex;
+  color: #636e72;
+  justify-content: center;
+  height: 5%;
+  align-items: flex-end;
+  font-size: 16px;
+  font-size: calc((0.8vmin) + (0.8vmax));
+  width: 80%;
+    margin-left: 10%;
+    flex-wrap: wrap;
+} */
+
+#footnote {
+  display: flex;
+  color: #636e72;
+  justify-content: center;
+  height: 10%;
+  align-items: flex-end;
+  font-size: 16px;
+  font-size: calc((0.8vmin) + (0.8vmax));
+}
+
+#footnote div {
+margin-bottom: 12px;
+margin-bottom: calc((0.6vmin) + (0.6vmax));
+}
+
+#about {
+  margin-left: 10%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  /*    background-color: #34495e;*/
+  /*    background-color: rgba(99, 110, 114,1.0);*/
+  color: white;
+  width: 80%;
+  height: 90%;
+  /* height: 85%; */
+}
+
+#aboutName {
+  display:flex;
+  /* height: 40%; */
+  height: 35%;
+  /*    64px */
+  /*    font-size: 64px;*/
+  font-size: calc((8.8vmin)); /* For IE */
+  /* font-size: calc((5vmin) + (5vmax)); */
+  font-size: calc((3.5vmin) + (3.5vmax));
+  align-items: center;
+}
+/*@supports not (-ms-high-contrast: none) {*/
+
+#aboutDescription {
+  display:flex;
+  flex-direction: column;
+  margin-top: -5%;
+  /* height: 15%; */
+  height: 20%;
+  padding: 5% 0px 5% 0px;
+  font-size: 30px;
+  font-size: calc((5vmin));  /* For IE */
+  font-size: calc((1.7vmin) + (1.7vmax));
+  align-items: center;
+  text-align: center;
+
+  color: #dcdcdc;
+}
+
+#aboutDescription > *{
+  padding: 0px;
+  margin: 0px 0px 1% 0px;
+}
+
+#aboutContact {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin-top: -5%;
+  height: 20%;
+  font-size: calc((5vmin)); /* For IE */
+  font-size: calc((1.8vmin) + (1.8vmax));
+
+  color: #dcdcdc;
+}
+
+#aboutContact section {
+  margin-left: -110px;
+  margin-left: calc( -1* calc((5.4vmin) + (5.4vmax)) );
+  padding-bottom: 6px;
+  padding-bottom:  calc((.35vmin) + (.35vmax));
+}
+
+#aboutContact li:nth-child(2) {
+  font-size: calc((6vmin)); /* For IE */
+  font-size: calc((1.1vmin) + (1.1vmax));
+}
+#aboutContact section div {
+font-size: calc((5vmin)); /* For IE */
+  font-size: calc((1.8vmin) + (1.8vmax));
+}
+
+
+#interestList div{
+  position: absolute;
+  /*
+  margin-top: -16px;
+  margin-top: calc( -1* calc((0.8vmin) + (0.8vmax)) );
+  */
+  opacity: 0;
+}
+
+#interestList div:nth-child(1) {
+  color: #4B8BBE;
+  animation: crossfade 30s 0s infinite;
+}
+#interestList div:nth-child(2) {
+  color: #F2C16D;
+  animation: crossfade 30s 6s infinite;
+}
+#interestList div:nth-child(3) {
+  color: #68A063;
+  animation: crossfade 30s 12s infinite;
+}
+#interestList div:nth-child(4) {
+  color: #FF9263;
+  animation: crossfade 30s 18s infinite;
+}
+#interestList div:nth-child(5) {
+  color: #C51A4A;
+  animation: crossfade 30s 24s infinite;
+}
+@keyframes crossfade{
+  10% {
+    opacity:1;
+  }
+  24% {
+    opacity:0;
+  }
+}
+
+#aboutIcon {
+  display:flex;
+  align-items: center;
+  text-align: center;
+  height: 25%;
+
+  /* Make mobile split into two column */
+  flex-wrap: wrap;
+  justify-content: center;
+  /*    font-size: 20px;*/
+}
+
+#about div {
+  z-index: 1;
+}
+
+#Email {
+  display: flex;
+
+}
+
+a.svg {
+  position: relative;
+  display: inline-block;
+  margin: 0 20px 0px 20px;
+  margin: 0px 8vmin 0px 8vmin; /* For IE */
+  margin: 0px calc((2vmin) + (2vmax)) 0px calc((2vmin) + (2vmax));
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left:0;
+  padding: 0;
+  fill: white;
+  height: 50%;
+  height: 12vmin; /* For IE */
+  /* height: calc((3vmin) + (3vmax)); */
+  width: 50%;
+  width: 12vmin; /* For IE */
+  /* width: calc((3vmin) + (3vmax)); */
+}
+
+
+/* div {
+font-size: calc((0.78vmin) + (0.78vmax));
+} */
+
+
+a.svg:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left:0;
+  padding: 0;
+}
+
+a.svg {
+  text-decoration: none;
+  font-size: calc((1vmin) + (1vmax));
+}
+
+a.svg #logo1 circle {
+  stroke: rgb(92, 107, 192,1.0);
+}
+
+a.svg:hover #logo1 {
+  fill: rgb(92, 107, 192,1.0);
+}
+#logo1Txt {
+  color: rgb(92, 107, 192,1.0);
+}
+a.svg:hover #logo2 {
+  fill: rgb(0,119,181);
+}
+a.svg #logo2 circle {
+  stroke:rgb(0,119,181);
+}
+#logo2Txt {
+  color: rgb(0,119,181);
+}
+a.svg:hover #logo3 {
+  fill: rgba(244, 203, 178,1.0);
+}
+a.svg #logo3 circle {
+  stroke:rgba(244, 203, 178,1.0);
+}
+#logo3Txt {
+  color: rgba(244, 203, 178,1.0);
+}
+a.svg #logo4 circle {
+  stroke:rgba(255, 234, 167,1.0);
+}
+a.svg:hover #logo4 {
+  fill: rgba(255, 234, 167,1.0);
+}
+#logo4Txt {
+  color: rgba(255, 234, 167,1.0);
+}
+
+a.svg #logo5 circle {
+  stroke:rgba(211,208,215,1.0);
+}
+a.svg:hover #logo5 {
+  fill: rgba(211,208,215,1.0);
+}
+a.svg:hover {
+  fill: rgba(211,208,215,1.0);
+}
+#logo5Txt {
+  color: rgba(211,208,215,1.0);
+}
+
+
+.resumeTxt {
+  position: absolute;
+  /*    top: 0px;*/
+  color: white;
+  width: 100%;
+  text-shadow: 2px 2px 3px #2d3436, 2px 2px 5px #2d3436;
+}
+
+a.svg #logo1,
+a.svg #logo2,
+a.svg #logo3,
+a.svg #logo4,
+.resumeTxt  {
+  -webkit-transition: 0.2s fill ease-in-out, 0.2s color ease-in-out;;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  margin-top: -100px;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  /* background-color: black; */
+  color: #fff;
+  text-align: center;
+  padding: 1vmin 1vmin;
+  border-radius: calc((0.5vmin) + (0.5vmax));
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  margin-top: calc((-3vmin) - (3vmax));
+}
+
+#contact.tooltip .tooltiptext {
+color: rgb(92, 107, 192,1.0);
+border: calc((0.1vmin) + (0.1vmax)) solid rgb(92, 107, 192,1.0);
+margin-left: calc((-4.4vmin) - (4.4vmax));
+}
+
+#blog.tooltip .tooltiptext {
+color: rgba(255, 234, 167,1.0);
+border: calc((0.1vmin) + (0.1vmax)) solid rgba(255, 234, 167,1.0);
+width: 180px;
+width: calc((9vmin) + (9vmax));
+margin-left: calc((-2.7vmin) - (2.7vmax));
+}
+
+#project.tooltip .tooltiptext {
+color: rgba(211,208,215,1.0);
+border: calc((0.1vmin) + (0.1vmax)) solid rgba(211,208,215,1.0);
+width: 180px;
+width: calc((9vmin) + (9vmax));
+margin-left: calc((-2.7vmin) - (2.7vmax));
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+@media screen and (orientation: landscape) and (max-height: 400px) {
+  #aboutDescription {
+    padding: 5% 0px 10% 0px;
+  }
+}

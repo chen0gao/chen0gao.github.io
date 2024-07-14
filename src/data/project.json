@@ -1,13 +1,14 @@
 [
   {
-    "title": "BioSimulation",
-    "date": "2019",
-    "href": "https://ccnydss.github.io/bioanimation/",
-    "tag": ["JavaScript", "p5.js"],
+    "title": "Journey Planner",
+    "date": "2023",
+    "href": "https://github.com/chen0gao/bay-area-hacks-2023",
+    "tag": ["Reactjs", "Nodejs", "MongoDB", "Google Map API"],
     "desc": [
-      "A simple web simulation for the Nernst and Goldman equation",
-      "Interactive simulation with tutorial",
-      "Detailed Data charts witl filters"
+      "Bay Area 2023 Hacks",
+      "Route Planning: Input locations to plan and calculate travel routes",
+      "Business Integration: Search and add nearby restaurants, bars, and hotels",
+      "History Tracking: View past travel routes through personal account history"
     ]
   },
   {
@@ -16,9 +17,20 @@
     "href": "https://github.com/chen0gao/Cryptopoly",
     "tag": ["JavaScript", "Python", "Java", "Google Cloud"],
     "desc": [
+      "Hoya2022 Hackathon \"Build a Game Track Prize\"",
       "A web two players Monopoly board game with cryptocurrencies theme",
-      "Real-time market price cryptocurrencies trends",
-      "Hoya2022 Hackathon \"Build a Game Track Prize\""
+      "Real-time market price cryptocurrencies trends"
+    ]
+  },
+  {
+    "title": "BioSimulation",
+    "date": "2019",
+    "href": "https://ccnydss.github.io/bioanimation/",
+    "tag": ["JavaScript", "p5.js"],
+    "desc": [
+      "A simple web simulation for the Nernst and Goldman equation",
+      "Interactive simulation with tutorial",
+      "Detailed Data charts witl filters"
     ]
   },
   {

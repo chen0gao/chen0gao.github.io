@@ -15,14 +15,6 @@
   justify-content: center;
 }
 
-.projectBadge {
-  height: 30%;
-  margin-top: 5%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .frame {
   width: 60%;
   height: 100%;
@@ -30,14 +22,9 @@
   -webkit-background-clip: padding-box; /* for Safari */
   background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
   opacity: 1;
-  border-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   overflow-y: auto;
-}
-
-@media (orientation: portrait) {
-  .frame {
-    width: 80%;
-  }
 }
 
 .projectBody:first-child {
@@ -124,4 +111,56 @@
 
 #project .frame a:hover {
   text-decoration: underline;
+}
+
+#projectHeader {
+  width: 60%;
+  border: 3px solid rgba(231, 213, 153, 0.7);
+  border-bottom: 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-top: 5%;
+  height: 10%;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+#projectHeader .hand-write {
+  color: #e7d599;
+  font-size: 30px;
+  font-size: calc((1.3vmin) + (1.3vmax));
+  width: 90%;
+}
+
+#projectHeader .back {
+  width: 10%;
+}
+
+.back {
+  align-self: end;
+  background-color: #e17055;
+  color: white !important;
+  font-size: calc((1vmin) + (1vmax)) !important;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-top-right-radius: 6px;
+
+  cursor: pointer;
+}
+
+.back:hover {
+  background-color: #e17155da;
+}
+
+@media (orientation: portrait) {
+  .frame,
+  #projectHeader {
+    width: 80%;
+  }
 }

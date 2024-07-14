@@ -1,6 +1,7 @@
-import Header from "../js/header";
-import SubHeader from "../js/subheader";
-import Badge from "../js/badge";
+import Header from "../components/Header";
+import SubHeader from "../components/Subheader";
+import Footer from "../components/Footer";
+import Badge from "../components/Badge";
 
 import { ReactComponent as Linkedin } from "../icon/linkedin.svg";
 import { ReactComponent as Project } from "../icon/project.svg";
@@ -18,7 +19,7 @@ export default function Home() {
         <Badge
           svg={<Linkedin />}
           text="Linkedin"
-          href="https://www.linkedin.com/in/chen-gao-5254b4202"
+          href="https://www.linkedin.com/in/chen0gao"
         />
         <Badge svg={<Project />} text="Project" href="./project" />
         <Badge
@@ -27,6 +28,7 @@ export default function Home() {
           href="https://github.com/chen0gao"
         />
       </section>
+      <Footer />
     </section>
   );
 }

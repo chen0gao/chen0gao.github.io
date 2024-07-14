@@ -1,18 +1,19 @@
-import Badge from "../js/badge";
-import ProjectBody from "../js/projectBody";
+import ProjectBody from "../components/ProjectBody";
 
 import "../css/project.css";
 
 import json from "../data/project.json";
-
-import { ReactComponent as ProjectSvg } from "../icon/project.svg";
+import { Link } from "react-router-dom";
 
 export default function Project() {
   return (
     <section id="project">
-      <div className="projectBadge">
-        <Badge svg={<ProjectSvg />} text="Project" href="../" />
-      </div>
+      <section id="projectHeader">
+        <div class="hand-write">Project</div>
+        <Link class="back hand-write" to="../">
+          back
+        </Link>
+      </section>
       <section className="frame">
         {json &&
           json.map((ele) => {

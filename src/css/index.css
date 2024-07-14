@@ -7,7 +7,7 @@ html, body /*Essential*/ {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-color: #000000;
+  background-color: #111111;
   margin: 0;
   padding: 0;
 
@@ -48,19 +48,19 @@ section {
 }
 
 .header1,
-.header2 {
+.header2,
+.header3 {
   font-weight: bold;
   font-size: 60px;
   font-size: calc((2.65vmin) + (2.65vmax));
 }
 
-.subheader1,
-.subheader2 {
+.subheader div {
   font-size: 45px;
   font-size: calc((1.9vmin) + (1.9vmax));
 }
 
-.subheader3 {
+.subheader div:last-child {
   font-size: 50px;
   font-size: calc((2.2vmin) + (2.2vmax));
 }
@@ -68,6 +68,16 @@ section {
 .hl {
   margin-left: 12px;
   color: #d7907b;
+}
+
+.hl2 {
+  margin-left: 12px;
+  color: #a29bfe;
+}
+
+.hb {
+  margin-left: 12px;
+  color: #0984e3;
 }
 
 @media (orientation: landscape) {
@@ -98,4 +108,31 @@ section {
   section {
     height: 25%;
   }
+}
+
+#footnote {
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  height: 10%;
+  align-items: flex-end;
+  font-size: 16px;
+  font-size: calc((0.8vmin) + (0.8vmax));
+}
+
+#footnote div {
+  color: #636e72;
+  margin-bottom: 12px;
+  margin-bottom: calc((0.6vmin) + (0.6vmax));
+}
+
+#footnote a {
+  margin: 0px 4px;
+  color: rgb(87, 87, 130);
+  text-decoration: underline;
+}
+
+.hand-write {
+  font-family: "Dela Gothic One", cursive;
 }
